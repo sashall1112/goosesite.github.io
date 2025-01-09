@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт гусей</title>
+    <link rel="icon" href="Картинки/Флаг гусей.png" type="image/png"> <!-- Добавляем ссылку на иконку сайта -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5; /* Цвет фона */
+        }
+        header {
+            background-image: url('Картинки/Флаг гусей.png');
+            background-size: cover;
+            background-position: center;
+            padding: 30px;
+            text-align: center;
+            color: white;
+            height: 250px; /* Уменьшил высоту */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+            position: relative; /* Добавлено для позиционирования текста */
+        }
+        header::after { /* Добавлено для добавления текста поверх обложки */
+            content: 'Привет! Ты попал на сайт гусей! Тут будут новые гуси которые будет создавать наш создатель! И не только гуси... А машины и оружия!';
+            position: absolute;
+            bottom: 20px; /* Отступ снизу */
+            left: 20px; /* Отступ слева */
+            color: #666; /* Серый цвет текста */
+            font-size: 18px;
+            line-height: 1.5; /* Межстрочный интервал */
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            background-color: #fff; /* Цвет фона секции */
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+            border-radius: 8px; /* Закругление углов */
+        }
+        section img {
+            margin-right: 20px;
+            border-radius: 8px; /* Закругление углов */
+        }
+        section div {
+            text-align: left;
+        }
+        h3 {
+            font-size: 20px;
+            color: #333; /* Цвет заголовка */
+        }
+        p {
+            color: #666; /* Серый цвет текста */
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            font-size: 14px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Тень */
+            position: relative; /* Заменил fixed на relative */
+            bottom: 0;
+        }
+        .btn {
+            background-color: #ffa500; /* Оранжевый цвет кнопки */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #ff8000; /* Изменение цвета при наведении */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Убрал надпись -->
+    </header>
+    <!-- Навигационное меню
+    <nav>
+        <a href="#">О Гусином Измерении</a>
+        <a href="#">Гуси</a>
+        <a href="#">Машины</a>
+        <a href="#">Оружие</a>
+        <a href="#">Блог</a>
+        <a href="#">Контакты</a>
+    </nav>
+    -->
+    <section>
+        <img src="Картинки/Морти гусь.png" alt="Морти гусь" width="200">
+        <div>
+            <h3>Имя: Морти гусь</h3>
+            <p>Тип: Гусь</p>
+            <p>Не очень умный и смышленный гусь, союзник Рика гуся. Он может взять любое изобретение из гаража Рика гуся. Есть противоположность злой Морти гусь.</p>
+        </div>
+        <a class="btn" href="Арты гусей.html">Арты гусей</a> <!-- Добавлена кнопка с атрибутом href -->
+    </section>
+    <section>
+        <img src="Картинки/Спиртовка.png" alt="Спиртовка" width="200">
+        <div>
+            <h3>Имя: Спиртовка</h3>
+            <p>Тип: Оружие</p>
+            <p>Самое первое оружие гусей, выстреливает снарядами огня либо спрея, умеет поджигать и ослеплять гусей.</p>
+        </div>
+    </section>
+    <section>
+        <img src="Картинки/Гусиный дупликатор.png" alt="Гусиный дупликатор" width="200">
+        <div>
+            <h3>Имя: Гусиный дупликатор</h3>
+            <p>Тип: Оружие + Машина</p>
+            <p>Величайшая разработка наших учёных гусей, он может с помощью одного гуся дублировать гусей раз за разом, есть категории которые неподдаются ему, с помощью экрана на гусином дупликаторе можно изменять строение гуся которого ты впечатал в своей пушке.</p>
+        </div>
+    </section>
+    <section>
+        <img src="Картинки/Мутант гусь.png" alt="Мутант гусь" width="200">
+        <div>
+            <h3>Имя: Мутант гусь</h3>
+            <p>Тип: Гусь</p>
+            <p>Очень сильный и крепкий гусь, основан на чёрной слизистой жидкости и гусе. Появился при взаимодействии с чёрной жидкостью.</p>
+        </div>
+    </section>
+    <section>
+        <img src="Картинки/Военный проводник гусь.png" alt="Военный проводник гусь" width="200">
+        <div>
+            <h3>Имя: Военный проводник гусь</h3>
+            <p>Тип: Гусь</p>
+            <p>Он несёт с собой флаг государства гусей. Гусь не особо важен, может помочь при заключении союза.</p>
+        </div>
+    </section>
+    <footer>
+        <p>© 2024 Goose Company</p>
+    </footer>
+</body>
+</html>
